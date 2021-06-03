@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact | community science museum</title>
+        <meta name="description" content="contact community science museum">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/85b41cf053.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header_content">
+                <div class="header_icons">
+                    <a href="index.html"><img src="images/logo.png" alt="community science logo" class="logo"></a>
+                    <div class="search">
+                        <input type="text" class="search_input" placeholder="search" aria-label="search input">
+                        <div class="searchbtn"><i class="fas fa-search"></i></div>
+                    </div>
+                    <label for="hamburgermenu" tabindex="0" class="hamburgermenu"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="hamburgermenu">
+                    <section class="hamburgernav">
+                        <div class="hamburger_menu">
+                            <h3>menu</h3>
+                            <div class="hamburger_menu_items">
+                                <a href="about.html" class="hamburger_menu_item">about us</a>
+                                <a href="exhibition.html" class="hamburger_menu_item">exhibition spaces</a>
+                                <div class="hamburger_menu_item current">visit/Contact</div>
+                                <a href="kids.html" class="hamburger_menu_item">kids</a>
+                                <a href="teachers.html" class="hamburger_menu_item">teachers</a>
+                                <a href="researchers.html" class="hamburger_menu_item">researchers</a>
+                            </div>    
+                        </div>
+                        <div class="hamburger_search_container">
+                            <h3>search</h3>
+                            <div class="hamburger_search">
+                                <input type="text" class="search_input" placeholder="search" aria-label="search input">
+                                <div class="searchbtn"><i class="fas fa-search"></i></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <nav>
+                <a href="about.html" class="nav_item">about us</a>
+                <a href="exhibition.html" class="nav_item" >exhibition spaces</a>
+                <div class="nav_item current">visit/Contact</div>
+                <a href="kids.html" class="nav_item">kids</a>
+                <a href="teachers.html" class="nav_item">teachers</a>
+                <a href="researchers.html" class="nav_item">researchers</a>
+            </nav>    
+        </header>
+
+        <main>
+            <div class="main_title">
+                <h1>visit and contact information</h1>
+            </div>
+            <div class="contact_layout">
+                <div class="contact_wrapper">
+                    <section class="contact_info">
+                        <img src="images/map.jpg" alt="a magnifying glass on a map" class="info_image">
+                        <div class="contact_text">
+                            <div class="contact_text">
+                                <h2>location</h2>
+                                <h3>community science museum</h3>
+                                <p>adresse: fakestreet 69, 0170 country</p>
+                            </div>
+                            <div class="contact_text">
+                                <h2>open hours</h2>
+                                <p>Monday: Closed</p> 
+                                <p>Tuesday: 10:00 – 16:00</p> 
+                                <p>Wednesday: 10:00 – 16:00</p> 
+                                <p>Thursday: 10:00 – 16:00</p> 
+                                <p>Friday: 10:00 – 19:00</p> 
+                                <p>Saturday: 9:00 – 16:00</p> 
+                                <p>Sunday: 9:00 – 13:00</p> 
+                            </div>
+                        </div>
+                    </section>
+
+                    <form action="/Contact" method="POST" class="form">
+                        <section class="form_sec">
+                            <h2 class="form_title">contact form</h2>
+                            <div class="form_info">
+                                <div class="form_fillout">
+                                    <label for="full_name" class="check">Full Name*</label>
+                                    <p class="form_help">(min 4 characters)</p>
+                                </div>
+                                <input type="text" name="full_name" id="full_name" placeholder="full name" class="form_input">
+                                <div class="form_error" id="fullname_error">Please enter your full name (min 4 characters)</div>
+                            </div>
+                            <div class="form_info">
+                                <div class="form_fillout">
+                                    <label for="email" class="check">e-mail*</label>
+                                    <p class="form_help">(example@email.com)</p>
+                                </div>
+                                <input type="email" name="email" id="email" placeholder="e-mail" class="form_input">
+                                <div class="form_error" id="email_error">Please enter a valid e-mail adress</div>
+                            </div>
+                        </section>
+                        <section class="form_sec">
+                            <h3>regarding</h3>
+                            <div>
+                            <div class="form_fill">
+                                <input type="checkbox" name="book_tour" id="book_tour">
+                                <label for="book_tour" class="check">book tour</label>
+                            </div>
+                            <div class="form_fill">
+                                <input type="checkbox" name="sign_up_for_club_activities" id="sign_up_for_club_activities">
+                                <label for="sign_up_for_club_activities" class="check">sign up for club activities</label>
+                            </div>
+                            <div class="form_fill">
+                                <input type="checkbox" name="get_involved" id="get_involved">
+                                <label for="get_involved" class="check">get involved</label>
+                            </div>
+                            <div class="form_fill">
+                                <input type="checkbox" name="other" id="other">
+                                <label for="other" class="check">other</label>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="form_sec">
+                            <div clss="form_fillout">
+                                <label for="message" class="check">write text here*</label>
+                                <p class="form_help">(min 20 characters)</p>
+                            </div>
+                            <textarea name="message" id="message" rows="10" cols="10"></textarea>
+                            <div class="form_error" id="message_error">Message needs to be min 20 characters</div>
+                        </section>
+                        <input type="submit" value="send" class="contact_btn btn">
+                        <div class="feedback"></div>
+                    </form>
+                </div>
+
+                <section>
+                    <div class="mini_card">
+                        <img src="images/admission.jpg" alt="an abstract installation of conecting wires" class="mini_image">
+                        <h2 class="card_title">admission</h2>
+                        <div class="card_text">
+                            <p>The entrance is free for all.</p> 
+                            <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p> 
+                            <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+                        </div>
+                    </div>
+                    <div class="mini_card">
+                        <img src="images/access1.jpg" alt="sign with a wheelchair" class="mini_image">
+                        <h2 class="card_title">accessibility</h2>
+                        <div class="card_text">
+                            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+                        </div>
+                    </div>
+                    <div class="mini_card">
+                        <img src="images/cafeteria.jpg" alt="happy family eating in a cafeteria" class="mini_image">
+                        <h2 class="card_title">food and drink</h2>
+                        <div class="card_text">
+                            <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+                        </div>
+                    </div>
+                    <div class="mini_card">
+                        <img src="images/shop1.jpg" alt="small boy choosing a flying toy in a toyshop" class="mini_image">
+                        <h2 class="card_title">shop</h2>
+                        <div class="card_text">
+                            <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <section class="footer_contact">
+                <h3>contact</h3>
+                <div class="footer_info">
+                    <div class="footer_text">
+                        <h4>location</h4>
+                        <p>community science museum</p>
+                        <p>adress: fakestreet avenue 69, 0170 country</p>
+                        <p>tel: 12345678</p>
+                        <p>mail: email@examle.com</p>
+                    </div>
+                    <div class="footer_text">
+                        <h4>open hours</h4>
+                        <p>Monday: Closed</p>
+                        <p>Tuesday: 10:00 – 16:00</p>
+                        <p>Wednesday: 10:00 – 16:00</p>
+                        <p>Thursday: 10:00 – 16:00</p>
+                        <p>Friday: 10:00 – 19:00</p>
+                        <p>Saturday: 9:00 – 16:00</p>
+                        <p>Sunday: 9:00 – 13:00</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="footer_contact">
+                <h3>stay updated</h3>
+                <div class="footer_info">
+                    <div class="update">
+                        <h4>sign up for newsletter</h4>
+                        <div class="signup">
+                            <input type="email" class="input" placeholder="email" aria-label="email input">
+                            <button class="btn">submit</button>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <h4>keep in touch</h4>
+                        <div class="footer_icons">
+                            <i class="fab fa-facebook-f f_icon"></i>
+                            <i class="fab fa-instagram f_icon"></i>
+                            <i class="fab fa-twitter f_icon"></i>
+                        </div>
+                    </div>
+                    <div class="get_involved">
+                        <a href="getinvolved.html" class="link_btn btn">get involved</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <script src="js/scriptform.js"></script>
+    </body>
+</html>

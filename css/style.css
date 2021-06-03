@@ -1,0 +1,729 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --offwhite: #F8F8F7;
+    --black: #000;
+    --blackgreen: #031F19;
+    --green: #00FF01;
+    --grey: #C2BEBB;
+    --lightpink: #FBF1F0;
+    --pink: #FBDEDA;
+    --purple: #A5199C;
+    --lightgreen: #A5FFA6;
+    --darkgreen: #14A86C; 
+}
+body {
+    margin: 0;
+    /* background-color: #35373B; */
+    /* background-color: #27292B; */
+    background-color: var(--offwhite);
+}
+
+/*--hamburgermenu style--*/
+.hamburger {
+    display: none;
+}
+label {
+    color: var(--green);
+    font-size: 20px;
+    padding: 0.5em;
+    display: none;
+}
+#hamburgermenu {
+    display: none;
+}
+.hamburgernav {
+    display: none;
+}
+.hamburger_menu, .hamburger_menu_items, .hamburger_archive, .hamburger_search_container, .hamburger_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hamburger_menu_item {
+    color: var(--green);
+    padding: 1em;
+}
+
+
+/* --hamburgermenu style-- */
+.btn {
+    background-color: var(--green);
+    color: var(--black);
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.875em;
+}
+.btn:hover {
+    background-color: var(--lightgreen);
+    cursor: pointer;
+}
+.link_btn {
+    margin: 20px;
+}
+
+/*--fontstyle--*/
+h1, h2, h3, h4, h5, .nav_item, .check, .hamburger_menu_item, .feedback, p::first-letter {
+    text-transform: capitalize;
+}
+h1, h2, h3, h4, nav, .btn, .check, .feedback {
+    font-family: 'Oswald', sans-serif;
+}
+p, .hamburger_menu_item {
+    font-family: 'Lato', sans-serif;
+}
+.title {
+    font-size: 50px;
+}
+h1 {
+    font-size: 20px;
+}
+h2, .nav_item {
+    font-size: 18px;
+}
+h3, .feedback {
+    font-size: 16px;
+}
+h4, .check {
+    font-size: 14px;
+}
+p, .form_error {
+    font-size: 14px;
+}
+.form_help {
+    font-size: 12px;
+}
+
+/*--headerstyle--*/
+
+header {
+    background-color: var(--black);
+    max-height: 202px;
+}
+.header_icons {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.logo {
+    max-width: 30em;
+}
+.search, .hamburger_search {
+    background-color: var(--green);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+.search_input, .input {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.fas {
+    padding: 5px;
+}
+.fa-search {
+    color: #000;
+}
+
+/* .header_content::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 10px;
+    border-bottom: 3px solid var(--green);
+} */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+.nav_item {
+    color: var(--offwhite);
+}
+a {
+    text-decoration: none;
+}
+.nav_item:hover {
+    color: var(--lightgreen);
+    cursor: pointer;
+}
+.current:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 2px;
+    border-bottom: 2px solid var(--green);
+}
+
+/*--mainstyle--*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .title {
+    color: var(--offwhite);
+} */
+.virtual_tour {
+    width: 32em;
+    position: relative;
+}
+.main_image {
+    width: 32em;
+}
+.virtual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .banner {
+    width: 100%;
+} */
+.card {
+    /* background-color: var(--offwhite);
+    border-radius: 25px 0px 25px 0px; */
+    padding: 20px;
+    display: flex;
+    width: 70em;
+}
+.intro_text {
+    padding-left: 30px;
+    padding-right: 30px;
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_events {
+    width: 60em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .main_title {
+    color: var(--green);
+} */
+.scroll {
+    width: 70em;
+    display: flex;
+    overflow-x: scroll;
+    /* overflow-x: hidden; */
+}
+.info_card {
+    width: 30em;
+    /* background-color: var(--offwhite);
+    border-radius: 25px 0px 25px 0px; */
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info_image {
+    width: 28em;
+}
+/* .card_title {
+    width: 20em;
+}
+.card_text {
+    width: 20em;
+} */
+
+/*--aboutstyle--*/
+
+.about {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+/*--exhibitionstyle--*/
+
+.exhibition {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*--contact style--*/
+
+.contact_layout {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.contact_info {
+    /* width: 37.5em; */
+    background-color: #fff;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.contact_text {
+    /* display: flex; */
+    width: 20em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form {
+    background-color: #fff;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 37.5em;
+    display: flex;
+    flex-direction: column;
+}
+.contact_btn {
+    align-self: center;
+}
+.form_sec {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form_info {
+    padding-top: 5px;
+}
+.form_input {
+    width: 250px;
+    padding: 5px;
+}
+.check {
+    color: #000;
+    opacity: 1;
+    display: block;
+    padding-left: 5px;
+}
+.form_fillout {
+    display: flex;
+}
+.form_fill {
+    display: flex;
+    padding: 5px;
+}
+.form_error {
+    color: crimson;
+    display: none;
+}
+.feedback {
+    align-self: center;
+    margin: 1em;
+}
+/* .visit_info {
+    width: 18.75em;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visit_text {
+    display: flex;
+    flex-direction: column;
+}
+.visit_title {
+    align-self: center;
+} */
+.text_area {
+    resize: none;
+}
+.mini_card {
+    width: 20em;
+    /* background-color: var(--offwhite);
+    border-radius: 25px 0px 25px 0px; */
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mini_image {
+    width: 20em;
+}
+
+/*--kidsstyle--*/
+
+.kids_do {
+    display: flex;
+}
+.kid_card {
+    /* background-color: var(--lightgreen); */
+    width: 25em;
+    border-radius: 25px 0px 25px 0px;
+    border: 2px solid var(--lightgreen);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game_section {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game {
+    position: relative;
+}
+.game_image {
+    width: 31.25em;
+}
+.game_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.game_card {
+    width: 35em;
+    /* background-color: var(--offwhite);
+    border-radius: 25px 0px 25px 0px; */
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--footerstyle--*/
+
+footer {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_contact {
+    color: var(--offwhite);
+    min-width: 19em;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.update {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup{
+    background-color: var(--green);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.footer_icons {
+    padding: 5px;
+}
+.f_icon {
+    padding: 5px;
+    font-size: 1.25em;
+}
+.get_involved {
+    align-self: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .hamburger {
+        width: 15em;
+        /* padding: 0.5em; */
+        display: flex;
+        justify-content: flex-end;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburgernav {
+        background-color: var(--black);
+        color: var(--green);
+        right: 0%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: flex-start; */
+        position: absolute;
+        top: 89px;
+        height: 30em;
+        width: 100%;
+        z-index: 10;
+        transition: 0.6s;
+    }
+    #hamburgermenu:checked ~ section {
+        display: flex;
+    }
+    .search {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .logo {
+        max-width: 20em;
+        padding-bottom: 10px;
+    }
+    /*--mainstyle--*/
+
+    /* main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .virtual_tour {
+        width: 20em;
+        /* position: relative; */
+    }
+    .main_image {
+        width: 20em;
+    }
+    /* .virtual {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+    .card {
+        /* padding: 20px; */
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        width: 25em;
+    }
+    /* .intro_text {
+        padding-left: 30px;
+        padding-right: 30px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    .main_events {
+        width: 25em;
+        /* margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .scroll {
+        width: 25em;
+        /* display: flex;
+        overflow-x: scroll; */
+    }
+    .info_card {
+        width: 25em;
+        /* margin: 10px;
+        padding: 20px; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .info_image {
+        width: 20em;
+    }
+    /*--aboutstyle--*/
+
+    .about {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    /*--contact style--*/
+
+    .contact_layout {
+        /* padding: none; */
+        /* display: flex; */
+    /* justify-content: space-around; */
+       flex-direction: column;
+       align-items: center;
+}
+    .contact_info {
+        width: 25em;
+        /* background-color: #fff; */
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20em;
+        /* padding-left: none;
+        padding-right: none; */
+}
+    .form {
+        /* background-color: #fff; */
+        /* margin-top: 20px;
+        padding-bottom: 20px; */
+        width: 25em;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .contact_btn {
+        align-self: center;
+    } */
+    .form_sec {
+        padding: 5px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        align-items: center;
+    }
+.form_info {
+    padding-top: 5px;
+}
+.form_input {
+    /* width: 250px; */
+    width: 20em;
+    padding: 5px;
+}
+/* .check {
+    color: #000;
+    opacity: 1;
+    display: block;
+    padding-left: 5px;
+} */
+/* .form_fill {
+    display: flex;
+    padding: 5px;
+} */
+textarea {
+    /* resize: none; */
+    width: 20em;
+}
+.mini_card {
+    /* width: 20em; */
+    margin: 5px;
+    padding: 5px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+/* .mini_image {
+    width: 20em;
+} */
+/*--kidsstyle--*/
+
+.kids_do {
+    display: flex;
+    flex-direction: column;
+}
+.kid_card {
+    /* background-color: var(--lightgreen); */
+    width: 25em;
+    /* border-radius: 25px 0px 25px 0px;
+    border: 2px solid var(--lightgreen); */
+    margin: 10px;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.game_section {
+    max-width: 25em;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center; */
+}
+/* .game {
+    position: relative;
+} */
+.game_image {
+    width: 25em;
+}
+/* .game_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+.game_card {
+    width: 25em;
+    /* background-color: var(--offwhite);
+    border-radius: 25px 0px 25px 0px; */
+    /* margin: 10px; */
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+    /*--footerstyle--*/
+
+    footer {
+        /* background-color: var(--black);
+        display: flex; */
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+    }
+   .footer_contact {
+        color: var(--grey);
+        min-width: 19em;
+        /* margin: 20px;
+        padding: 20px; */
+        /* display: flex;
+        flex-direction: column; */
+        /* align-items: center; */
+    }
+    /* .footer_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .footer_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/* .update {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup{
+    background-color: var(--green);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.footer_icons {
+    padding: 5px;
+}
+.f_icon {
+    padding: 5px;
+    font-size: 1.25em;
+}
+.get_involved {
+    align-self: center;
+    margin: 20px;
+} */
+}
