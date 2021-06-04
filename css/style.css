@@ -22,6 +22,7 @@ body {
 }
 
 /*--hamburgermenu style--*/
+
 .hamburger {
     display: none;
 }
@@ -49,6 +50,7 @@ label {
 
 
 /* --hamburgermenu style-- */
+
 .btn {
     background-color: var(--green);
     color: var(--black);
@@ -67,6 +69,7 @@ label {
 }
 
 /*--fontstyle--*/
+
 h1, h2, h3, h4, h5, .nav_item, .check, .hamburger_menu_item, .feedback, p::first-letter {
     text-transform: capitalize;
 }
@@ -131,15 +134,6 @@ header {
 .fa-search {
     color: #000;
 }
-
-/* .header_content::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    padding-top: 10px;
-    border-bottom: 3px solid var(--green);
-} */
 nav {
     display: flex;
     justify-content: space-around;
@@ -206,14 +200,10 @@ main {
     flex-direction: column;
     align-items: center;
 }
-/* .main_title {
-    color: var(--green);
-} */
 .scroll {
     width: 70em;
     display: flex;
     overflow-x: scroll;
-    /* overflow-x: hidden; */
 }
 .info_card {
     width: 30em;
@@ -250,14 +240,11 @@ main {
     justify-content: space-around;
 }
 .contact_info {
-    /* width: 37.5em; */
     background-color: #fff;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
 }
 .contact_text {
-    /* display: flex; */
     width: 20em;
     padding-left: 20px;
     padding-right: 20px;
@@ -306,27 +293,11 @@ main {
     align-self: center;
     margin: 1em;
 }
-/* .visit_info {
-    width: 18.75em;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.visit_text {
-    display: flex;
-    flex-direction: column;
-}
-.visit_title {
-    align-self: center;
-} */
 .text_area {
     resize: none;
 }
 .mini_card {
     width: 20em;
-    /* background-color: var(--offwhite);
-    border-radius: 25px 0px 25px 0px; */
     margin: 20px;
     padding: 20px;
     display: flex;
