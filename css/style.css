@@ -449,7 +449,6 @@ footer {
 @media screen and (max-width: 700px) {
     .hamburger {
         width: 15em;
-        /* padding: 0.5em; */
         display: flex;
         justify-content: flex-end;
     }
@@ -464,7 +463,6 @@ footer {
         display: none;
         flex-direction: column;
         align-items: center;
-        /* justify-content: flex-start; */
         position: absolute;
         top: 89px;
         height: 30em;
@@ -485,85 +483,48 @@ footer {
         max-width: 20em;
         padding-bottom: 10px;
     }
-    /*--mainstyle--*/
 
-    /* main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
+/*--mainstyle--*/
+
     .virtual_tour {
         width: 20em;
-        /* position: relative; */
     }
     .main_image {
         width: 20em;
     }
-    /* .virtual {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
     .card {
-        /* padding: 20px; */
-        /* display: flex; */
         flex-direction: column;
         align-items: center;
         width: 25em;
     }
-    /* .intro_text {
-        padding-left: 30px;
-        padding-right: 30px;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
     .main_events {
         width: 25em;
-        /* margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; */
     }
     .scroll {
         width: 25em;
-        /* display: flex;
-        overflow-x: scroll; */
     }
     .info_card {
         width: 25em;
-        /* margin: 10px;
-        padding: 20px; */
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
     }
     .info_image {
         width: 20em;
     }
-    /*--aboutstyle--*/
+
+/*--aboutstyle--*/
 
     .about {
         padding-top: 1em;
         padding-bottom: 1em;
     }
-    /*--contact style--*/
+
+/*--contact style--*/
 
     .contact_layout {
-        /* padding: none; */
-        /* display: flex; */
-    /* justify-content: space-around; */
        flex-direction: column;
        align-items: center;
-}
+    }
     .contact_info {
         width: 25em;
-        /* background-color: #fff; */
-        /* display: flex; */
         flex-direction: column;
         align-items: center;
     }
@@ -572,13 +533,8 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 20em;
-        /* padding-left: none;
-        padding-right: none; */
-}
+    }
     .form {
-        /* background-color: #fff; */
-        /* margin-top: 20px;
-        padding-bottom: 20px; */
         width: 25em;
         display: flex;
         flex-direction: column;
@@ -588,142 +544,56 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    /* .contact_btn {
-        align-self: center;
-    } */
     .form_sec {
         padding: 5px;
-        /* display: flex; */
-        /* flex-direction: column; */
         align-items: center;
     }
-.form_info {
-    padding-top: 5px;
-}
-.form_input {
-    /* width: 250px; */
-    width: 20em;
-    padding: 5px;
-}
-/* .check {
-    color: #000;
-    opacity: 1;
-    display: block;
-    padding-left: 5px;
-} */
-/* .form_fill {
-    display: flex;
-    padding: 5px;
-} */
-textarea {
-    /* resize: none; */
-    width: 20em;
-}
-.mini_card {
-    /* width: 20em; */
-    margin: 5px;
-    padding: 5px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-/* .mini_image {
-    width: 20em;
-} */
+    .form_info {
+        padding-top: 5px;
+    }
+    .form_input {
+        width: 20em;
+        padding: 5px;
+    }
+    textarea {
+        width: 20em;
+    }
+    .mini_card {
+        margin: 5px;
+        padding: 5px;
+    }
+
 /*--kidsstyle--*/
 
-.kids_do {
-    display: flex;
-    flex-direction: column;
-}
-.kid_card {
-    /* background-color: var(--lightgreen); */
-    width: 22em;
-    /* border-radius: 25px 0px 25px 0px;
-    border: 2px solid var(--lightgreen); */
-    margin: 10px;
-    padding: 10px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-.game_section {
-    max-width: 25em;
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: center; */
-}
-/* .game {
-    position: relative;
-} */
-.game_image {
-    width: 25em;
-}
-/* .game_btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-.game_card {
-    width: 25em;
-    /* background-color: var(--offwhite);
-    border-radius: 25px 0px 25px 0px; */
-    /* margin: 10px; */
-    padding: 10px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
+    .kids_do {
+        display: flex;
+        flex-direction: column;
+    }
+    .kid_card {
+        width: 22em;
+    }
+    .game_section {
+        max-width: 25em;
+    }
+    .game_image {
+        width: 25em;
+    }
+    .game_card {
+        width: 25em;
+        padding: 10px;
+    }
     /*--footerstyle--*/
 
     footer {
-        /* background-color: var(--black);
-        display: flex; */
-        /* justify-content: space-evenly; */
         flex-direction: column;
     }
    .footer_contact {
         color: var(--grey);
         min-width: 19em;
-        /* margin: 20px;
-        padding: 20px; */
-        /* display: flex;
-        flex-direction: column; */
-        /* align-items: center; */
     }
-    /* .footer_info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
     .footer_text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-/* .update {
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.signup{
-    background-color: var(--green);
-    border-radius: 5px;
-    margin-right: 10px;
-    padding: 5px;
-    margin-top: 5px;
-}
-.footer_icons {
-    padding: 5px;
-}
-.f_icon {
-    padding: 5px;
-    font-size: 1.25em;
-}
-.get_involved {
-    align-self: center;
-    margin: 20px;
-} */
 }
