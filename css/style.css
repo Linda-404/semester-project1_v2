@@ -171,9 +171,6 @@ main {
     flex-direction: column;
     align-items: center;
 }
-/* .title {
-    color: var(--offwhite);
-} */
 .virtual_tour {
     width: 32em;
     position: relative;
@@ -187,12 +184,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* .banner {
-    width: 100%;
-} */
 .card {
-    /* background-color: var(--offwhite);
-    border-radius: 25px 0px 25px 0px; */
     padding: 20px;
     display: flex;
     width: 70em;
@@ -200,13 +192,11 @@ main {
 .intro_text {
     padding-left: 30px;
     padding-right: 30px;
-    /* align-self: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 .main_events {
     width: 60em;
@@ -227,8 +217,6 @@ main {
 }
 .info_card {
     width: 30em;
-    /* background-color: var(--offwhite);
-    border-radius: 25px 0px 25px 0px; */
     margin: 10px;
     padding: 20px;
     display: flex;
@@ -238,12 +226,6 @@ main {
 .info_image {
     width: 28em;
 }
-/* .card_title {
-    width: 20em;
-}
-.card_text {
-    width: 20em;
-} */
 
 /*--aboutstyle--*/
 
@@ -361,7 +343,6 @@ main {
     display: flex;
 }
 .kid_card {
-    /* background-color: var(--lightgreen); */
     width: 25em;
     border-radius: 25px 0px 25px 0px;
     border: 2px solid var(--lightgreen);
@@ -391,8 +372,6 @@ main {
 }
 .game_card {
     width: 35em;
-    /* background-color: var(--offwhite);
-    border-radius: 25px 0px 25px 0px; */
     margin: 10px;
     padding: 20px;
     display: flex;
@@ -444,6 +423,58 @@ footer {
 .get_involved {
     align-self: center;
     margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+/*--mainstyle--*/
+
+    .virtual_tour {
+        width: 20em;
+    }
+    .main_image {
+        width: 20em;
+    }
+    .card {
+        padding: 20px;
+        display: flex;
+        width: 48em;
+    }
+    .main_events {
+        width: 48em;
+    }
+    .scroll {
+        width: 40em;
+    }
+    .info_card {
+        width: 28em;
+        padding: 10px;
+    }
+    .info_image {
+        width: 20em;
+    }
+
+/*--contact style--*/
+
+    .contact_layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .facilities_info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+/*--kidsstyle--*/
+
+    .kids_do {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .kid_card {
+        width: 22em;
+    }
 }
 
 @media screen and (max-width: 700px) {
